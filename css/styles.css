@@ -1,29 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');
+/*************************************************
+**************************************************
 
-html, body    {
+Website Name: Zackary Ross.com
+Website URL: http://www.zackaryross.com
+Website Author: Zackary Ross
+Author URL: zackaryross.com
+Copyright 2023. All Rights Reserved.
+
+Color Guide
+***************
+
+
+*************************************************
+
+Type Guide
+***************
+
+
+Debugging Tools
+***************
+border: 1px solid #fff;
+
+*************************************************/
+
+/************************************************
+*************************************************
+0. CSS Reset ------------------------ 
+1. Universal Styles -----------------
+2. Header & Nav Styles -------------- 
+3. Main Body Styles ----------------- 
+4. Sidebar Styles ------------------- 
+5. Widget Styles --------------------
+6. Footer Styles -------------------- 
+7. Comments & Form Styles ----------- 
+8. Generic Styles ----------- 
+*************************************************
+************************************************/
+
+/*----------------------------------------------
+------------------------------------------------
+0. CSS Reset
+------------------------------------------------
+----------------------------------------------*/
+* {
     margin: 0;
-    height: 100%;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*----------------------------------------------
+  ------------------------------------------------
+  1. Universal Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
 
-article {
+  main {
     margin: 20px;
+    width: 90%;
+    float: right;
+    margin-bottom: 60px;
 }
-
-body.landingPage    {
-    background-image: url("../images/Zackary\ Ross.jpg");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-color: rgba(96, 96, 99, 0.993);
-}
-
+  /*----------------------------------------------
+  ------------------------------------------------
+  2. Header & Nav Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  
 #mainHeader {
     background-color: black;
 }
 
 nav {
     height: 50px;
-    width: 100%;
     margin: 0 auto 20px;
 }
 
@@ -31,7 +83,6 @@ nav>ul  {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     float: right;
 }
 
@@ -39,7 +90,6 @@ nav>ul>li   {
     float: left;
     font-size: 1em;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
 }
 
@@ -54,58 +104,31 @@ nav>ul>li a {
 nav>ul>li a:hover {
     color: lightblue;
 }
-
-h1.landingPage  {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    font-size: 7em;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    color: white;
-    opacity: 0.6;
-}
-
-h2.landingPage  {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-        color: white;
-    opacity: 0.6;
-}
-
-section.landingPage {
-    padding-top: 15%;
-}
-
+  /*----------------------------------------------
+  ------------------------------------------------
+  3. Main Body Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  
 h1  {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
-    padding: 0;
-    margin: 0;
     color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    text-transform: capitalize;
 }
 
 h2  {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    padding: 10px 0 0 0;
-    margin: 0;
     color: rgb(0, 0, 0);
+    letter-spacing: 1px;
 }
 
 p   {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: .9em;
     padding: 10px 10px 10px 10px;
-    margin: 0;
     color: rgb(0, 0, 0);
     line-height: 2;
 }
@@ -116,7 +139,6 @@ strong  {
 
 img {
     padding: 10px;
-    margin: 0;
     display: b;
     float: right;
     width: 300px;
@@ -124,21 +146,8 @@ img {
 }
 
 ul  {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: .9em;
-    padding: 10px 10px 10px 70px;
-    margin: 0;
-    color: rgb(0, 0, 0);
-    line-height: 2;
-}
-
-ul.resumes  {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: .9em;
-    padding: 10px 10px 10px 70px;
-    margin: 0;
     color: rgb(0, 0, 0);
     line-height: 2;
 }
@@ -152,13 +161,52 @@ ul>li a:hover {
     text-transform: uppercase;
 }
 
+  /*----------------------------------------------
+  ------------------------------------------------
+  4. Sidebar Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  
+  /*----------------------------------------------
+  ------------------------------------------------
+  5. Widget Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  
+  /*----------------------------------------------
+  ------------------------------------------------
+  6. Footer Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  
+footer  {
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer>p    {
+    color: white;
+    font-size: .75em;
+    float: right;
+}
+  /*----------------------------------------------
+  ------------------------------------------------
+  7. Comments & Form Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  
 form    {
     padding: 20px;
 }
 
 label   {
-float: left;
-vertical-align: top;
+    float: left;
+    vertical-align: top;
 }
 
 input {
@@ -186,3 +234,8 @@ input[type=submit],[type=reset]    {
     cursor: pointer;
     float: right;
 }
+  /*----------------------------------------------
+  ------------------------------------------------
+  8. Generic Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
