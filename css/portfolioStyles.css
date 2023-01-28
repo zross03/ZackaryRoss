@@ -1,0 +1,44 @@
+ul, li  {
+    list-style-type: none;
+}
+
+img {
+    width: 150px;
+    opacity: .5;
+}
+img:hover   {
+    opacity: 1;
+}
+h2  {
+    text-align: center;
+    padding-top: 3em;
+    text-transform: uppercase;
+}
+.portfolio    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 0px;
+    opacity: 1;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image-gallery > li {
+    flex-basis: 150px;
+  }
+  
+  .image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+  }
