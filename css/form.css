@@ -1,0 +1,43 @@
+/*****
+Colors
+
+Dark Blue #21364b
+Light Blue #3e93cc
+Lightest Blue #a6d7e5
+Gray rgb(91, 87, 87);
+*****/
+
+form    {
+    padding: 1em;
+}
+
+label   {
+    vertical-align: top;
+}
+
+input {
+    width: 100%;
+    padding: .5em .5em;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #21364b;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: .5em .5em;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #21364b;
+    border-radius: 4px;
+}
+
+input[type=submit],[type=reset]    {
+    width: auto;
+    background-color: #a6d7e5;
+    margin: 1em;
+    padding: .5em 1em .5em 1em;
+    cursor: pointer;
+    float: right;
+}
