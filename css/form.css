@@ -1,14 +1,11 @@
-/*****
-Colors
-
-Dark Blue #21364b
-Light Blue #3e93cc
-Lightest Blue #a6d7e5
-Gray rgb(91, 87, 87);
-*****/
-
 form    {
-    padding: 1em;
+    padding: 10px;
+}
+#contactFormButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
 label   {
@@ -17,27 +14,26 @@ label   {
 
 input {
     width: 100%;
-    padding: .5em .5em;
+    padding: 10px;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid #21364b;
+    border: 1px solid #1b263b;
     border-radius: 4px;
 }
 
 textarea {
     width: 100%;
-    padding: .5em .5em;
+    padding: 10px;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid #21364b;
+    border: 1px solid #1b263b;
     border-radius: 4px;
 }
 
 input[type=submit],[type=reset]    {
-    width: auto;
-    background-color: #a6d7e5;
-    margin: 1em;
-    padding: .5em 1em .5em 1em;
+    width: 100px;
+    background-color: #778da9;
+    padding: 10px;
     cursor: pointer;
-    float: right;
+    border: 1px solid #1b263b;
 }

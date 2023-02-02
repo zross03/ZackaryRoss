@@ -1,33 +1,24 @@
-/*****
-Colors
-
-Dark Blue #21364b
-Light Blue #3e93cc
-Lightest Blue #a6d7e5
-Gray rgb(91, 87, 87);
-*****/
-
-h1  {
-    letter-spacing: 2px;
-}
-
-h2  {
-    padding-left: 1em;
-}
-
 ul.resume  {
-    padding-left: 3em;
+    padding-left: 50px;
 }
 
 article:nth-of-type(even)    {
-    background-color: lightblue;
-    margin: .5em 0 .5em 0;
-    padding: .5em 0 .5em 0;
+    background-color: #e0e1dd;
+    margin-left: 0px;
+    padding: 20px;
 
 }
 
 article:nth-of-type(odd)    {
-    background-color: white;
-    margin: .5em 0 0 0;
-    padding: .5em 0 0 0;
+    background-color: #ffffff;
+    margin-left: 0px;
+    padding: 20px;
+}
+
+.resumeLinks    {
+    color: #778da9;
+}
+.resumeLinks:hover  {
+    color: #0d1b2a;
+    letter-spacing: 1px;
 }

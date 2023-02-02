@@ -1,161 +1,232 @@
-/*****
-Colors
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@600&display=swap');
 
-Dark Blue #21364b
-Light Blue #3e93cc
-Lightest Blue #a6d7e5
-Gray rgb(91, 87, 87);
-*****/
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');
-
-body {
-    color: white;
+*   {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Open Sans', sans-serif;
-    background-color: #21364b;
+    font-size: 16px;
 }
-header {
-    background: #21364b;
-}
-main {
-    background: #ffffff;
-    padding: 1em;
-    border-left: 1px solid #21364b;
-    border-right: 1px solid #21364b;
-}
-footer {
-    background: #21364b;
-    color: #ffffff;
-    font-size: .9em;
-    text-align: end;
-    margin: 1em 1em 0 0;
-}
-.left-sidebar {
-    background: #a6d7e5;
-}
-.right-sidebar {
-    background: #a6d7e5;
-}
-.mainContent {
+
+body    {
     display: flex;
     flex-direction: column;
+    min-height:100vh;
 }
 
-nav {
-    height: 2em;
-    margin: 0 auto 2em;
-}
-
-.pageHeading    {
-    padding-top: 1em;
-    padding-left: 1em;
-    color: #a6d7e5;
-    font-size: 1em;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-nav>ul  {
-    list-style-type: none;
-    margin: 0;
+#headerContainer    {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0d1b2a;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
-nav>ul>li   {
-    font-size: 1em;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: inherit;
-    text-decoration: none;
+header  {
+    background-color: #0d1b2a;
+    display: flex;
+    margin-left: 50px;
 }
 
-nav>ul>li a {
-    color: #ffffff;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+footer {
+    background: #0d1b2a;
+    color: #e0e1dd;
+    font-size: 1rem;
+    height: 50px;
+    margin-top: auto;
 }
 
-nav>ul>li a:hover {
-    color: lightblue;
+#headerContent  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1  {
-    font-weight: 500;
-    font-size: 1.5em;
-    color: #21364b;
-    letter-spacing: 2px;
-    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-family: 'Oswald';
+    color: #e0e1dd;
+    letter-spacing: 3px;
 }
 
 h2  {
-    font-weight: 400;
-    font-size: 1em;
-    color: #21364b;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: #415a77;
+    font-style: italic;
+    padding-bottom: 20px;
 }
 
-p   {
-    font-weight: 400;
-    font-size: .9em;
-    padding: 10px 10px 10px 10px;
-    color: rgb(0, 0, 0);
-    line-height: 2;
+#footerContent  {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 10px;
 }
 
-strong  {
-    font-weight: inherit;
+#footerIcons    {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.flex-content-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+.flex-content-nowrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+nav {
+    background-color: #0d1b2a;
+}
+
+nav>ul {
+    justify-content: center ;
+    list-style-type: none;
+    font-family: 'Open Sans';
+    font-size: 1rem;
 }
 
 img {
     padding: 10px;
-    float: right;
-    width: 300px;
+    width: 60%;
     opacity: 0.6;
+    float: right;
 }
 
-ul  {
-    font-weight: 400;
-    font-size: .9em;
-    color: rgb(0, 0, 0);
-    line-height: 2;
-    list-style-type: none;
+img.icons {
+    padding: 0px;
+    opacity: 1;
+    max-height: 15px;
+    width: auto;
 }
 
-ul>li a {
-    color: #21364b;
+a   {
+    color: #e0e1dd;
     text-decoration: none;
+    padding: .5em;
 }
 
-ul>li a:hover {
-    text-transform: uppercase;
+a:hover   {
+    color: #778da9;
 }
 
-@media all and (min-width: 768px) {
-    .mainContent {
+h3  {
+    color: #1b263b;
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+h4  {
+    color: #415a77;
+    font-family: 'Oswald';
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+p   {
+    line-height: 1.75rem;
+    padding-left: 25px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 15px;
+}
+
+i   {
+    font-size: inherit;
+}
+
+section {
+    font-size: .75rem;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+strong  {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+@media screen and (min-width:768px) {
+    #headerContainer    {
         flex-direction: row;
-        flex-wrap: wrap;    
-    } 
-    header, 
-    footer {
-        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
-    main {
-        flex: 6;
-        order: 2;
-        min-height: 85vh;
+    #headerContent  {
+        align-items: flex-end;
+    }
+
+    img {
+        width: 350px;
+    }
+
+    header  {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: end;
+        padding-right: 30px;
+    }
+
+    footer {
+        font-size: 1.25rem;
+        height: 100px;
+        margin-top: auto;
+    }
+
+    img.icons {
+        max-height: 25px;
+        width: auto;
+    }
+    p   {
+        font-size: 1.05rem;
+    }
+    h1  {
+        font-size: 3.5rem;
+        font-family: 'Oswald';
+        color: #e0e1dd;
+        letter-spacing: 3px;
     }
     
-    .left-sidebar {
-        order: 1;
-        flex: 1;
+    h2  {
+        font-size: 2rem;
+        font-family: 'Open Sans';
+        font-weight: 300;
+        color: #415a77;
+        font-style: italic;
+        padding-bottom: 20px;
+    }    
+    h3  {
+        color: #1b263b;
+        font-family: 'Oswald';
+        font-size: 1.5rem;
+        font-variant: small-caps;
+        letter-spacing: 1px;
     }
-    .right-sidebar {
-        flex: 1;
-        order: 3;
+}
+
+@media screen and (min-width:1024px) {
+    header  {
+        justify-content: center;
     }
-    footer {
-        order: 4;
+
+    img {
+        width: 450px;
     }
 }
