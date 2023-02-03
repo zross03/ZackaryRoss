@@ -115,6 +115,10 @@ a   {
     padding: .5em;
 }
 
+a.imageLink {
+    padding: 0px;
+}
+
 a:hover   {
     color: #778da9;
 }
