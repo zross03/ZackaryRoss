@@ -2,14 +2,14 @@ ul.resume  {
     padding-left: 50px;
 }
 
-/* article:nth-of-type(even)    {
+/* .collapsible:nth-of-type(even)    {
     background-color: #e0e1dd;
     margin-left: 0px;
     padding: 20px;
 
 }
 
-article:nth-of-type(odd)    {
+/* article:nth-of-type(odd)    {
     background-color: #ffffff;
     margin-left: 0px;
     padding: 20px;
@@ -30,9 +30,8 @@ article:nth-of-type(odd)    {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    border: 0;
     text-align: left;
-    outline: none;
     font-size: 1rem;
     font-family: 'Oswald';
     letter-spacing: 1px;
