@@ -12,9 +12,20 @@
     <div id="headerContainer">
     <header><div id="headerContent"><h1>Zackary Ross</h1><h2>Theatre Artist</h2></div>
     </header>
-    <nav>
-        <ul class="flex-content-wrap">
-            <li><a href="/index.html">Home</a></li>
+    <nav><div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="flex-content-wrap menu__box">
+            <!--li><a href="/index.html" class="menu__item">Home</a></li-->
+            <li><a href="/Theatre-Artist/about.html" class="menu__item">About</a></li>
+            <li><a href="/Theatre-Artist/resume.html" class="menu__item">Resume</a></li>
+            <li><a href="/Theatre-Artist/portfolio.html" class="menu__item">Portfolio</a></li>
+            <li><a href="/Theatre-Artist/contact.html" class="menu__item">Contact</a></li>
+        </ul></div>
+        <ul class="flex-content-wrap hamburger">
+            <!--li><a href="/index.html">Home</a></li-->
             <li><a href="/Theatre-Artist/about.html">About</a></li>
             <li><a href="/Theatre-Artist/resume.html">Resume</a></li>
             <li><a href="/Theatre-Artist/portfolio.html">Portfolio</a></li>
@@ -23,9 +34,9 @@
     </nav></div>
     <main>
         <section><h3>Resume</h3>
-    <article title="Teaching">
-        <h4>Teaching</h4>
-        <ul class="resume">
+    <article title="Teaching"><button type="button" class="collapsible">
+        Teaching +</button>
+        <ul class="resume-content">
             <li>Bellarmine University | Associate Professor of Theatre | 2015 - present</li>
             <li>Eastern Illinois University | Instructor of Theatre Arts | 2014 - 2015</li>
             <li>Parkland College | Instructor of Theatre Arts | 2012 - 2015</li>
@@ -34,9 +45,9 @@
             <li>Looking for Shakespeare | Graduate Student Intern | 2007</li>
         </ul>
     </article>
-    <article title="Directing">
-        <h4>Directing</h4>
-        <ul class="resume">
+        <article title="Directing"><button type="button" class="collapsible">
+            Directing +</button>
+        <ul class="resume-content">
             <li>Bellarmine University | Neighborhood 3: Requisition of Doom | 2022</li>
             <li>Bellarmine University | Asking Strangers the Meaning of Life | 2020</li>
             <li>Bellarmine University | Unrehearsed Shakespeare - The Comedie of Errors | 2019</li>
@@ -52,9 +63,8 @@
             <li>New York University | Orestes 2.0 | 2007</li>
         </ul>
     </article>
-    <article title="Acting">
-        <h4>Acting</h4>
-        <ul class="resume">
+    <article title="Acting"><article title="Acting"><button type="button" class="collapsible">Acting +</button>
+        <ul class="resume-content">
             <li>Bellarmine University | The 25th Annual...Spelling Bee | 2018 | VP Panch</li>
             <li>Parkland Theatre | Wait Until Dark | 2014 | Roat</li>
             <li>Allerton Music Barn Festival | Of Thee I Sing | 2013 | Understudy</li>
@@ -67,8 +77,8 @@
         </ul>
     </article>
     <article title="Design">
-        <h4>Design</h4>
-        <ul class="resume">
+        <article title="Design"><button type="button" class="collapsible">Design +</button>
+        <ul class="resume-content">
         <li>Bellarmine University | The Half-Life of Marie Curie | 2022 | Sound Design</li>
         <li>Pandora Productions | The Legend of Georgia McBride | 2022 | Scenic Design</li>
         <li>Bellarmine University | Neighborhood 3: Requisition of Doom | 2022 | Scenic Design</li>
@@ -83,8 +93,8 @@
     </ul>
     </article>
     <article title="Stage Combat">
-        <h4>Stage Combat</h4>
-        <ul class="resume">
+        <article title="Stage Combat"><button type="button" class="collapsible">Stage Combat +</button>
+        <ul class="resume-content">
         <li>Madisonville Community College | The Play That Goes Wrong | 2022 | Fight Choreography </li>
         <li>Bellarmine University | Angry Fags | 2022 | Fight Choreography</li>
         <li>Bellarmine University | Little Shop of Horrors | 2021 | Fight Choreography</li>
@@ -96,8 +106,8 @@
     </ul>
     </article>
     <article title="Trainings and Workshops">
-        <h4>Trainings and Workshops</h4>
-        <ul class="resume">
+        <article title="Training and Workshops"><button type="button" class="collapsible">Trainings and Workshops +</button>
+        <ul class="resume-content">
             <li>20 Hours SAFD Rapier & Dagger | SAFD Single Sword (Recommended Pass)</li>
             <li>SAFD Quarterstaff (Basic Pass) | SAFD Firearm Safety certification</li>
             <li>DAI Beginning Combatant (Unarmed and Broadsword) </li>
@@ -107,12 +117,12 @@
         </ul>
     </article>
     <article title="Special Skills">
-        <h4>Special Skills</h4>
-        <p>First Folio training, conversational in French, fight choreography, miscellaneous production and technical theatre skills (dramaturgy, board operation, basic construction, sewing, scenic/property/sound/projection design), graphic and web design.</p>
+        <article title="Special Skills"><button type="button" class="collapsible">Special Skills +</button>
+        <p class="resume-content">First Folio training, conversational in French, fight choreography, miscellaneous production and technical theatre skills (dramaturgy, board operation, basic construction, sewing, scenic/property/sound/projection design), graphic and web design.</p>
     </article>
     <article title="Download Resumes">
-        <h4>Download Resumes</h4>
-        <ul class="resume">
+        <article title="Download Resumes"><button type="button" class="collapsible">Download Resumes +</button>
+        <ul class="resume-content">
             <li><a href="" class="resumeLinks">Curriculum Vitae</a></li>
             <li><a href="" class="resumeLinks">Acting Resume</a></li>
             <li><a href="" class="resumeLinks">Directing Resume</a></li>
@@ -120,6 +130,7 @@
             <li><a href="" class="resumeLinks">Combat Resume</a></li>
         </ul></section>
     </main>
-    <footer><div id="footerContent"><div id="footerIcons"><img src="/images/social-icons/facebook.png" class="icons" alt="Facebook"><img src="/images/social-icons/twitter.png" class="icons" alt="Twitter"><img src="/images/social-icons/linkedin.png" class="icons" alt="LinkedIn"></div>© 2023 - Zackary Ross</div></footer>
+    <footer><div id="footerContent"><div id="footerIcons"><a href="https://www.facebook.com/Zackary.Ross.03/" target="_blank" class="imageLink"><img src="/images/social-icons/facebook.png" class="icons" alt="Facebook"></a><img src="/images/social-icons/twitter.png" class="icons" alt="Twitter" style="display: none;"><a href="https://www.linkedin.com/in/zackary-ross-73a4b180/" class="imageLink" target="_blank"><img src="/images/social-icons/linkedin.png" class="icons" alt="LinkedIn"></a></div>© 2023 - Zackary Ross</div></footer>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

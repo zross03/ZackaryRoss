@@ -2,18 +2,19 @@ ul.resume  {
     padding-left: 50px;
 }
 
-article:nth-of-type(even)    {
+/* .collapsible:nth-of-type(even)    {
     background-color: #e0e1dd;
     margin-left: 0px;
     padding: 20px;
 
 }
 
-article:nth-of-type(odd)    {
+/* article:nth-of-type(odd)    {
     background-color: #ffffff;
     margin-left: 0px;
     padding: 20px;
 }
+*/
 
 .resumeLinks    {
     color: #778da9;
@@ -22,3 +23,30 @@ article:nth-of-type(odd)    {
     color: #0d1b2a;
     letter-spacing: 1px;
 }
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #e0e1dd;
+    color: #415a77;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #778da9;
+    color: #e0e1dd;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+.resume-content {
+    padding-left: 50px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
