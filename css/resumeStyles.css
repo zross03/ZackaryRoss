@@ -45,8 +45,18 @@ ul.resume  {
 
   /* Style the collapsible content. Note: hidden by default */
 .resume-content {
-    padding-left: 50px;
+    padding-left: 75px;
+    padding-bottom: 25px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    line-height: 2.5;
   }
+
+  p {
+    line-height: 1.75rem;
+    padding-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
