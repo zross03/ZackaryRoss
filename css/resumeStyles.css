@@ -2,20 +2,6 @@ ul.resume  {
     padding-left: 50px;
 }
 
-/* .collapsible:nth-of-type(even)    {
-    background-color: #e0e1dd;
-    margin-left: 0px;
-    padding: 20px;
-
-}
-
-/* article:nth-of-type(odd)    {
-    background-color: #ffffff;
-    margin-left: 0px;
-    padding: 20px;
-}
-*/
-
 .resumeLinks    {
     color: #778da9;
 }
@@ -49,4 +35,7 @@ ul.resume  {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    line-height: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
   }

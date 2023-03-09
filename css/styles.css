@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 body    {
@@ -43,14 +43,14 @@ footer {
     align-items: center;
 }
 
-h1  {
+#siteTitle  {
     font-size: 2.5rem;
     font-family: 'Oswald';
     color: #e0e1dd;
-    letter-spacing: 3px;
+    letter-spacing: .2rem;
 }
 
-h2  {
+#siteSubtitle  {
     font-size: 1.25rem;
     font-family: 'Open Sans';
     font-weight: 300;
@@ -95,10 +95,11 @@ nav>ul {
     font-size: 1rem;
 }
 
-img {
+#headshot {
     padding: 10px;
     width: 60%;
     opacity: 0.6;
+    max-width: 400px;
     float: right;
 }
 
@@ -112,7 +113,7 @@ img.icons {
 a   {
     color: #e0e1dd;
     text-decoration: none;
-    padding: .5em;
+    padding: .5rem;
 }
 
 a.imageLink {
@@ -123,7 +124,7 @@ a:hover   {
     color: #778da9;
 }
 
-h3  {
+h1  {
     color: #1b263b;
     font-family: 'Oswald';
     font-size: 1.5rem;
@@ -131,14 +132,7 @@ h3  {
     letter-spacing: 1px;
 }
 
-h4  {
-    color: #415a77;
-    font-family: 'Oswald';
-    font-size: 1rem;
-    letter-spacing: 1px;
-}
-
-p   {
+p, li   {
     line-height: 1.75rem;
     padding-left: 25px;
     font-family: 'Open Sans';
@@ -284,14 +278,14 @@ strong  {
     p   {
         font-size: 1.05rem;
     }
-    h1  {
+    #siteTitle  {
         font-size: 3.5rem;
         font-family: 'Oswald';
         color: #e0e1dd;
         letter-spacing: 3px;
     }
     
-    h2  {
+    #siteSubtitle  {
         font-size: 2rem;
         font-family: 'Open Sans';
         font-weight: 300;
@@ -299,13 +293,6 @@ strong  {
         font-style: italic;
         padding-bottom: 20px;
     }    
-    h3  {
-        color: #1b263b;
-        font-family: 'Oswald';
-        font-size: 1.5rem;
-        font-variant: small-caps;
-        letter-spacing: 1px;
-    }
 
   .menu__btn {
      display: none;
