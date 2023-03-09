@@ -49,8 +49,10 @@ img {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     overflow: hidden; /* Enable scroll if needed */
   }
 
@@ -66,10 +68,14 @@ img {
     display: flex;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    right: 50px;
-    top: 0;
-    font-size: 3rem;
+    right: 25px;
+    top: 25px;
+    font-size: 1.5rem;
     color: white;
     border: 0;
     background-color: transparent;
+  }
+
+  #modalControlActive:hover   {
+    color: #778da9;
   }
