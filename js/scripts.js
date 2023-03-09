@@ -44,3 +44,47 @@ function closeModal()  {
   document.getElementById("modalControlActive").id = 'modalControl';
   document.getElementById("modalActive").id = 'modal';
   }
+
+
+
+  //contact form validation
+
+  <script>
+   const constraints = {
+       Name: {
+           presence: { allowEmpty: false }
+       },
+       Email: {
+           presence: { allowEmpty: false },
+           email: true
+       },
+       Subject: {
+        presence: { allowEmpty: false }
+      },
+        Message: {
+           presence: { allowEmpty: false }
+       }
+   };
+
+   const form = document.getElementById('contact-form');
+
+   form.addEventListener('submit', function (event) {
+     const formValues = {
+         name: form.elements.name.value,
+         email: form.elements.email.value,
+         subject: form.elements.subject.value,
+         message: form.elements.message.value
+     };
+
+     const errors = validate(formValues, constraints);
+
+     if (errors) {
+       event.preventDefault();
+       const errorMessage = Object
+           .values(errors)
+           .map(function (fieldValues) { return fieldValues.join(', ')})
+           .join("\n");
+
+       alert(errorMessage);
+     }
+   }, false);

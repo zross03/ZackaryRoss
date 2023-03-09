@@ -34,13 +34,11 @@
     </nav></div>
     <main>
         <section><h1>Contact</h1>
-            <form action="">
-                <label>Name</label><input type="text" placeholder="Name" size="50"
-                required><br>
-                <label>Email</label><input type="email" name="email" id="email" placeholder="name@email.com" size="50" required><br>
-                <label>Subject</label><input type="text" placeholder="Subject" id="subject" size="50" required><br>
-                <lable>Message</lable><textarea rows="5" cols="50" placeholder="Please write a message here..." id="message"></textarea><br><div id="contactFormButtons">
-                        </div><input type="Submit">
+            <form action="/php/contact.php" method="post" id="contact-form">
+                <label>Name</label><input id="Name" name="Name" type="text" placeholder="Name" size="50" required><br>
+                <label>Email</label><input id="Email" name="Email" type="email" placeholder="name@email.com" size="50" required><br>
+                <lable>Message</lable><textarea id="Message" name="Message" rows="5" cols="50" placeholder="Please write a message here..."></textarea><br><div id="contactFormButtons">
+                        </div><input type="submit" name="submit" value="Submit">
                 <input type="Reset"></div>
                 
             </form></section>
