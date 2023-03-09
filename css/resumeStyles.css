@@ -31,7 +31,8 @@ ul.resume  {
 
   /* Style the collapsible content. Note: hidden by default */
 .resume-content {
-    padding-left: 50px;
+    padding-left: 75px;
+    padding-bottom: 25px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
