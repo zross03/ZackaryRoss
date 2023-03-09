@@ -19,7 +19,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-/* thumbnail gallery code */
+// thumbnail gallery code
 const images = document.querySelectorAll(".gallery-item img");
 let imgSrc;
 // get images src onclick
