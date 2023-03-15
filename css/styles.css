@@ -259,7 +259,7 @@ strong  {
         align-items: flex-end;
     }
 
-    img {
+    #headshot {
         width: 350px;
     }
 
@@ -315,7 +315,7 @@ strong  {
         justify-content: center;
     }
 
-    img {
+    #headshot {
         width: 450px;
     }
 }

@@ -6,7 +6,6 @@ images.forEach((img) => {
     img.addEventListener("click", (e) => {
         imgSrc = e.target.src;
         document.getElementById("modal").id = 'modalActive';
-        document.getElementById("modalControl").id = 'modalControlActive';
 
 
 
@@ -20,6 +19,5 @@ images.forEach((img) => {
 });
 
 function closeModal()  {
-  document.getElementById("modalControlActive").id = 'modalControl';
   document.getElementById("modalActive").id = 'modal';
   }
