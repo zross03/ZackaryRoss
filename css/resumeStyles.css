@@ -1,13 +1,9 @@
-ul.resume  {
-    padding-left: 50px;
-}
 
 .resumeLinks    {
     color: #778da9;
 }
 .resumeLinks:hover  {
     color: #0d1b2a;
-    letter-spacing: 1px;
 }
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -19,7 +15,8 @@ ul.resume  {
     border: 0;
     text-align: left;
     font-size: 1rem;
-    font-family: 'Oswald';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
   }
 
@@ -39,4 +36,17 @@ ul.resume  {
     line-height: 3rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    list-style: none;
+    text-indent: -40px;
   }
+
+  .resumeParagraph  {
+    text-indent: 0;
+  }
+/******************************* Media Queries *******************************/
+
+@media screen and (min-width:1080px) {
+  .collapsible {
+    font-size: 1.5rem;
+  }
+}
