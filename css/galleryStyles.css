@@ -53,20 +53,34 @@
 
 #modalControl {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-content: center;
 }
 
 button   {
   display: flex;
-  transform: translate(-30px, 10px);
-font-size: 1.5rem;
+font-size: 1rem;
 color: white;
 border: 0;
 background-color: transparent;
+justify-self: center;
+align-self: center;
 }
 
 button:hover   {
   color: #778da9;
+}
+/* Media Queries are below */
+
+@media screen and (min-width:768px) {
+  button   {
+    justify-self: right;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  button   {
+    transform: translate(-30px, 10px);
+    }
 }

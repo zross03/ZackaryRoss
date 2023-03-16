@@ -246,7 +246,7 @@ strong  {
 
 /* Media Queries are below */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:802px) {
     header  {
         margin-left: 50px;
     }
