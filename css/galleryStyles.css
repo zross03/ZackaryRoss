@@ -34,8 +34,6 @@
   filter: none;
 }
 
-
-
 #modal {
   display: none; /* Hidden by default */
 }
@@ -56,6 +54,11 @@
   flex-direction: column-reverse;
   justify-content: center;
   align-content: center;
+  align-items: center;
+}
+
+#modalControl img {
+  max-width: 100%;
 }
 
 button   {
@@ -70,17 +73,4 @@ align-self: center;
 
 button:hover   {
   color: #778da9;
-}
-/* Media Queries are below */
-
-@media screen and (min-width:768px) {
-  button   {
-    justify-self: right;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  button   {
-    transform: translate(-30px, 10px);
-    }
 }
