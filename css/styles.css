@@ -101,9 +101,7 @@ nav>ul {
 
 #headshot {
     padding: 10px;
-    width: 60%;
     opacity: 0.6;
-    max-width: 400px;
     float: right;
 }
 
@@ -259,10 +257,6 @@ strong  {
         align-items: flex-end;
     }
 
-    #headshot {
-        width: 350px;
-    }
-
     header  {
         justify-content: center;
     }
@@ -313,9 +307,5 @@ strong  {
 @media screen and (min-width:1024px) {
     header  {
         justify-content: center;
-    }
-
-    #headshot {
-        width: 450px;
     }
 }
