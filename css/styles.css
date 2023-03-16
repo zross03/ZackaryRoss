@@ -1,8 +1,11 @@
+/******************************* All Page styles *******************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@600&display=swap');
 
 *   {
     margin: 0px;
     padding: 0px;
+    padding-right: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
@@ -11,9 +14,22 @@ body    {
     display: flex;
     flex-direction: column;
     min-height:100vh;
+    width: 100vw;
 }
 
-/* Header and Footer styles */
+.flex-content-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+.flex-content-nowrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+/******************************* Header styles *******************************/
 
 #headerContainer    {
     display: flex;
@@ -31,13 +47,6 @@ header  {
     margin-left: 0px;
 }
 
-footer {
-    background: #0d1b2a;
-    color: #e0e1dd;
-    font-size: 1rem;
-    height: 50px;
-    margin-top: auto;
-}
 
 #headerContent  {
     display: flex;
@@ -61,32 +70,7 @@ footer {
     padding-bottom: 20px;
 }
 
-#footerContent  {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px 10px 10px;
-}
-
-#footerIcons    {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding-left: 30px;
-}
-
-/* Style the button that is used to open and close the collapsible content */
-
-.flex-content-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-
-.flex-content-nowrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    }
+/******************************* Navigation styles *******************************/
 
 nav {
     background-color: #0d1b2a;
@@ -99,70 +83,7 @@ nav>ul {
     font-size: 1rem;
 }
 
-#headshot {
-    padding: 10px;
-    opacity: 0.6;
-    float: right;
-}
-
-img.icons {
-    padding: 0px;
-    opacity: 1;
-    max-height: 15px;
-    width: auto;
-}
-
-a   {
-    color: #e0e1dd;
-    text-decoration: none;
-    padding: .5rem;
-}
-
-a.imageLink {
-    padding: 0px;
-}
-
-a:hover   {
-    color: #778da9;
-}
-
-h1  {
-    color: #1b263b;
-    font-family: 'Oswald';
-    font-size: 1.5rem;
-    font-variant: small-caps;
-    letter-spacing: 1px;
-}
-
-p, li   {
-    line-height: 1.75rem;
-    padding-left: 25px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 1em;
-    padding-bottom: 15px;
-}
-
-i   {
-    font-size: inherit;
-}
-
-section {
-    font-size: .75rem;
-    font-family: 'Open Sans';
-    font-weight: 200;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-}
-
-strong  {
-    font-weight: inherit;
-    font-size: inherit;
-}
-
-
-/* Hamburger styles */
+/******************************* Hamburger Menus styles *******************************/
 
 #menu__toggle {
     opacity: 0;
@@ -241,18 +162,119 @@ strong  {
     display: none;
 }
 
+/******************************* Footer styles *******************************/
 
-/* Media Queries are below */
+footer  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 65px;
+    background: #0d1b2a;
+    color: #e0e1dd;
+    font-size: 1rem;
+    margin-top: auto;
+}
 
-@media screen and (min-width:802px) {
+#footerIcons    {
+    list-style: none;
+}
+
+.social-media-icons li {
+    display: inline-block;
+}
+
+.social-media-icons a {
+    background-image: url(/images/social-icons/socials.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.facebook {
+    background-position: 30px 0;
+}
+
+.linkedin {
+    background-position: -30px 0;
+}
+
+.copyright  {
+    display: flex;
+    justify-self: left;
+}
+
+/******************************* Main Content styles *******************************/
+
+#headshot {
+    padding: 10px;
+    opacity: 0.6;
+    float: right;
+}
+
+a   {
+    color: #e0e1dd;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+a.imageLink {
+    padding: 0px;
+}
+
+a:hover   {
+    color: #778da9;
+}
+
+h1  {
+    color: #1b263b;
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+p, li   {
+    line-height: 1.75rem;
+    padding-left: 25px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 15px;
+}
+
+i   {
+    font-size: inherit;
+}
+
+section {
+    font-size: .75rem;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+strong  {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/******************************* Media Queries *******************************/
+
+@media screen and (min-width:820px) {
     header  {
         margin-left: 50px;
     }
+
     #headerContainer    {
         flex-direction: row;
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     #headerContent  {
         align-items: flex-end;
     }
@@ -263,31 +285,26 @@ strong  {
 
     nav {
         justify-content: end;
-        padding-right: 30px;
+        padding-right: 0px;
     }
 
     footer {
         font-size: 1.25rem;
-        height: 100px;
-        margin-top: auto;
     }
 
-    img.icons {
-        max-height: 25px;
-        width: auto;
-    }
     p   {
         font-size: 1.05rem;
     }
+
     #siteTitle  {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-family: 'Oswald';
         color: #e0e1dd;
         letter-spacing: 3px;
     }
     
     #siteSubtitle  {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: 'Open Sans';
         font-weight: 300;
         color: #778da9;
